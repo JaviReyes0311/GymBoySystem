@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<HTML LANG = "ES">
+
+<head>
+
+<meta charset="utf-8">   
+<title>EvolutionHealthy.com</title>
+<link rel="stylesheet" href="../css/vistaIngresarMembresia.css">
+<script src="../../controladores/JS/ScriptMembresia.js" defer></script>
+
+</head>
+<body id="cuerpo">
+
+    <div id="Inicio">
+        <div id="menu">
+            <h3 id="TituloMenu">GymboySystem</h3>
+            <div id="Botones">
+            <button class="Boton" id="botonPrincipal">Registro de Entrada</button>
+            <button class="Boton"  id="botonUsuNuevo">Ingresar Usuario nuevo</button>
+            <button class="Boton"  id="botonMembresia">Ingresar Membresia</button>
+            <button class="Boton"  id="usuariosExistentes">Revisar Usuarios existentes</button>
+            <button class="Boton"  id="EntradasRegistradas">Registros de ingreso</button>
+            <button class="Boton"  id="botonBloqueo">Pantalla de bloqueo</button>
+            <button class="Boton"  id="botonManual">Manual de usuario</button>
+        </div>
+        </div>
+        
+        <div id="SeccionEntrada">
+            <div id="LogoEsquina">
+                <img id="ImgEsquina" src="../Imagenes/logoSneg.jpg">
+            </div>
+            <div id="Input">
+        <div class="input-container" >
+            <form class="form" method="post" action="../../controladores/phps/guardar_membresia.php">
+                <p class="title">Crear Membresia </p>
+                <p class="message">Registro de membresia para el cliente</p>
+                    <div class="flex">
+               <!-- fecha de inicio -->
+            
+                    <label>
+                        <input class="input" type="number" placeholder="" required="" name="NumCliente">
+                        <span>Numero de cliente</span>
+                    </label>
+                </div>  
+                        
+                <label>
+                    <input class="input" type="number" placeholder="" required="" name="idAdmin">
+                    <span>id del Administrador que registra</span>
+                </label> 
+                    
+                <label>
+                    <input class="input" type="date" placeholder="" required="" name="fechaInicio">
+                    <span>fecha de inicio</span>
+                </label>
+                <label>
+                    <input class="input" type="date" placeholder="" required="" name="FechaTermino">
+                    <span>fecha de termino</span>
+                </label>
+                <label>
+                  <input class="input"  placeholder="" required="" list="Opciones" name="estado">
+                  <span>estado</span>
+                  <datalist id="Opciones">
+                    <option value= 1>Vigente</option>
+               </datalist>
+              </label>
+                <button class="submit">Registrar Membresia</button>
+              </form>
+          </div>
+        </div>
+          </div>
+    </div>
+
+
+</body>
+</html>

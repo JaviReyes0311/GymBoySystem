@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<HTML LANG="ES">
+
+<head>
+    <meta charset="utf-8">   
+    <title>EvolutionHealthy.com</title>
+    <link rel="stylesheet" href="../css/vistaPrincipal.css">
+    <script src="../../controladores/JS/ScriptPrincipal.js" defer></script>
+    <style>
+        
+    </style>
+</head>
+<body id="cuerpo">
+
+    <div id="Inicio">
+        <div id="menu">
+            <h3 id="TituloMenu">GymboySystem</h3>
+            <div id="Botones">
+                <button class="Boton" id="botonPrincipal">Registro de Entrada</button>
+                <button class="Boton" id="botonUsuNuevo">Ingresar Usuario nuevo</button>
+                <button class="Boton" id="botonMembresia">Ingresar Membresia</button>
+                <button class="Boton" id="usuariosExistentes">Revisar Usuarios existentes</button>
+                <button class="Boton" id="EntradasRegistradas">Registros de ingreso</button>
+                <button class="Boton" id="botonBloqueo">Pantalla de bloqueo</button>
+                <button class="Boton" id="botonManual">Manual de usuario</button>
+            </div>
+        </div>
+        
+        <div id="SeccionEntrada">
+            <div id="LogoEsquina">
+                <img id="ImgEsquina" src="../Imagenes/logoSneg.jpg" alt="Logo">
+            </div>
+
+            <!-- Sección QR -->
+            <div id="SeccionQR">
+                <img src="../Imagenes/QR1.png" alt="Código QR para el bot de Telegram" class="imgQR" id="imagenQR"
+            </div>
+
+            <!-- Formulario de entrada -->
+            <div id="Input">
+                <div class="input-container">
+                    <form id="Form" action="../../controladores/phps/RegistrarEntrada.php" method="post">
+                        <input type="number" placeholder="Ingresar numero de usuario" id="InputEntrada" name="NumCliente">
+                        <button type="submit" class="button" id="botonEntrada">Registrar Entrada</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</HTML>

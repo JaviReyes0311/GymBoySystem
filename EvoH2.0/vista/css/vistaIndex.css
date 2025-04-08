@@ -1,0 +1,62 @@
+
+#cuerpo{
+    background-color: #231f20;
+}
+#Section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#Imagen{
+    max-width: 350px;
+
+}
+/* login */
+#LOGIN{
+    
+    width: 400PX;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #231f20;
+    padding: 20px;
+    border: 1px solid #231f20;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .form input {
+    height: 35px;
+    outline: none;
+    border: 2px solid #ffde17;
+    background: transparent;
+    padding: 20px 10px;
+    border-radius: 5px;
+    transition: .5s;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .form input:focus {
+    background: #ffde17;
+  }
+  
+  .form button {
+    width: 100%;
+    color: black;
+    transition: .5s;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    background: #ffde17;
+    align-self: flex-end;
+  }

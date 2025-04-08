@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-sizing: border-box;
+    }
+
+#menu{
+    background-color: #ffde17;
+    width: 20em;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    align-content: center;
+   
+}
+#LogoEsquina{
+    display: flex;
+    justify-content: end;
+}
+#ImgEsquina{
+    margin-top: 2%;
+    width: 10%;
+    border-radius: 20%;
+}
+#Botones{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    align-content: center;
+    margin-top: 10%;
+}
+.Boton{
+    
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    height: 35px;
+    margin-top: 20%;
+    border: #000000,solid,2px;
+    background-color: #ffde17;
+    color: #000000;
+    
+}
+
+.Boton:hover {
+    
+    background-color: #000; /* Fondo negro */
+    color: #ffde17; /* Texto amarillo */
+}
+#TituloMenu{
+    margin-top: 10%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+#Input{
+    margin-top: 5%;
+}
+#SeccionEntrada{
+    height: 50em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+}
+
+#cuerpo {
+    background: url('../Imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* tabla */
+#tablaUsuarios {
+    width: 100%;
+    border-collapse: separate; /* Permitir espaciado entre celdas */
+    border-spacing: 5px; /* Espaciado entre celdas */
+}
+
+#tablaUsuarios th {
+    color: white; /* Letras de encabezado en blanco */
+    background-color: black; /* Fondo negro para el encabezado */
+    border: 2px solid yellow; /* Bordes amarillos */
+    padding: 12px; /* Espaciado interno mayor */
+    text-align: left; /* Alineación del texto */
+}
+
+#tablaUsuarios td {
+    color: yellow; /* Letras de datos en amarillo */
+    border: 2px solid yellow; /* Bordes amarillos */
+    padding: 12px; /* Espaciado interno mayor */
+    background-color: black; /* Fondo negro */
+}

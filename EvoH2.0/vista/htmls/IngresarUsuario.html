@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<HTML LANG = "ES">
+
+<head>
+
+<meta charset="utf-8">   
+<title>EvolutionHealthy.com</title>
+<link rel="stylesheet" href="../css/vistaIngresarUsuario.css">
+<script src="../../controladores/JS/ScriptIngresarUsuario.js" defer></script>
+
+</head>
+<body id="cuerpo">
+
+    <div id="Inicio">
+        <div id="menu">
+            <h3 id="TituloMenu">GymboySystem</h3>
+            <div id="Botones">
+            <button class="Boton" id="botonPrincipal">Registro de Entrada</button>
+            <button class="Boton"  id="botonUsuNuevo">Ingresar Usuario nuevo</button>
+            <button class="Boton"  id="botonMembresia">Ingresar Membresia</button>
+            <button class="Boton"  id="usuariosExistentes">Revisar Usuarios existentes</button>
+            <button class="Boton"  id="EntradasRegistradas">Registros de ingreso</button>
+            <button class="Boton"  id="botonBloqueo">Pantalla de bloqueo</button>
+            <button class="Boton"  id="botonManual">Manual de usuario</button>
+        </div>
+        </div>
+        
+        <div id="SeccionEntrada">
+            <div id="LogoEsquina">
+                <img id="ImgEsquina" src="../Imagenes/logoSneg.jpg">
+            </div>
+            <div id="Input">
+                <form class="form" action="../../controladores/phps/guardar_usuario.php" method="post">
+                    
+    
+                    <div class="flex">
+                        <label>
+                            <input class="input" type="text" placeholder="" required="" name="nombre">
+                            <span>Nombre</span>
+                        </label>
+                
+                        <label>
+                            <input class="input" type="text" placeholder="" required="" name="apellido">
+                            <span>Apellido</span>
+                        </label>
+                    </div>  
+                            
+
+                    <label>
+                        <input class="input" placeholder="" type="tel" required="" name="telefono">
+                        <span>numero de telefono</span>
+                    </label>
+                    <!-- otro label -->
+                    <label>
+                        <input class="input" placeholder="" type="tel" required="" name="contacto_emergencia">
+                        <span>Contacto de Emergencia</span>
+                    </label>
+                    <label>
+                      <span id="fechaRegis">Fecha de registro</span>
+                        <input class="input" placeholder="" type="date" required="" name="fecha_registro">
+                        
+                    </label>
+                    <!-- OTRO LABEL -->
+                    <label>
+                        <input class="input"  list="TipoCliente" name="tipo_cliente">
+                        <span>Tipo de Cliente</span>
+                        <datalist id="TipoCliente">
+                          <option value= 1>Estudiante</option>
+                            <option value= 2>Normal</option>
+                              <option value= 3>Pareja</option>
+                             </datalist>
+                    </label>
+                         <!-- OTRO LABEL -->
+                         <label>
+                          <input class="input"  type="number" name="id_Admin">
+                          <span>id_Administrador</span>
+                          <datalist id="idAdmin">
+                            </datalist>
+                      </label>
+                    <label>
+                        <textarea class="input01" placeholder="" rows="3" required="" name="notas"></textarea>
+                        <span>notas</span>
+                    </label>
+                    
+                    <button href="#" class="fancy">
+                      <span class="top-key"></span>
+                      <span class="text">submit</span>
+                      <span class="bottom-key-1"></span>
+                      <span class="bottom-key-2"></span>
+                    </button>
+                </form>
+
+        </div>
+          </div>
+    </div>
+
+
+</body>
+</html>
